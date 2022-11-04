@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="heading">Just a Form</p>
+    <div class="form1">
+        <form action="blank.html" method="get">
+
+            <div class="io">
+
+                <label for="Name">Name:</label>
+                <input list="listName" id="Name" placeholder="Your Name" name="full_name">
+                <datalist id="listName">
+                    <option value="Abir">
+                    <option value="Asim">
+                    <option value="Harshit">
+                    <option value="Naman">
+                </datalist> <br>
+
+                <label for="Age">Age:</label>
+                <input type="number" id="Age" placeholder="Your Age" name="age"><br>
+
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" value="Male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" value="Female" name="gender">
+                <label for="female">Female</label><br>
+
+                <label for="language">Choose a language:</label>
+                <select name="language" id="lang">
+                    <option value="">Select</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="MERN">MERN</option>
+                </select>
+                <br>
+
+                <label for="comment">Comments: </label>
+                <textarea name="comment" id="commentBox" cols="30" rows="5" placeholder="Comments"></textarea>
+                <br>
+
+                <input type="checkbox" name="agreement" value="agree" id="agreement" required>
+                <label for="agreement">I agree to all terms and conditions</label>
+
+                <button class="click" onclick="alert('You just clicked a button!!')">Click Me</button>
+
+                <input type="submit" id="submit" name="submit">
+            </div>
+        </form>
+    </div>
+    <div class="box">
+        <div class="insideDiv">
+            <p>Here is all the fun!</p>
+        </div>
+    </div>
+</body>
+</html>
