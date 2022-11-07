@@ -1,0 +1,22 @@
+.header img{
+    height: 50px;
+}
+
+.carousel-item img{
+    height: 500px;
+}
+
+.containers{
+    background-color: aquamarine;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.modal-body img{
+    width: 450px;
+}
+
+.carousal-modal{
+    height: auto;
+}
+

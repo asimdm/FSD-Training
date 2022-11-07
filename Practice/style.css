@@ -1,0 +1,11 @@
+.header{
+    animation-name: top-header;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes top-header{
+    0%{
+        background-image: "https://t4.ftcdn.net/jpg/02/76/08/07/360_F_276080724_hltnCyDjcqAyRtLzDYo3T2jXbBtCD7fl.jpg";
+    }
+}

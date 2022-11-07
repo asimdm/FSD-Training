@@ -1,0 +1,21 @@
+.cust1{
+    background-color: beige;
+}
+
+.cust2{
+    background-color: rgb(246, 246, 125);
+}
+
+.cust3{
+    background-color: cornsilk;
+    border: 3px solid black;
+}
+
+.cust1,.cust2,.cust3{
+    border: 5px double black;
+    border-radius: 5px;
+}
+
+.header{
+    background-color: rgb(181, 212, 239);
+}
