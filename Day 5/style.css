@@ -25,3 +25,9 @@
     border-radius: 8px;
 }
 
+.image img{
+    width: 350px;
+    height: 650;
+    border-radius: 10px;
+}
+
