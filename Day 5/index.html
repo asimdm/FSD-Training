@@ -55,7 +55,7 @@
         </button>
       </div>
       <div class="topic">
-        <p class="h1 mt-5" style="text-align: center;">Mother Nature</p>
+        <p class="display-1 mt-4" style="text-align: center;">Mother Nature</p>
       </div>
       <div class="containers mt-5 ms-5 me-5">
         <div class="container">
@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mt-5 shadow-lg p-3 mb-5 bg-body rounded btn">
+                    <div class="card mt-5 shadow-lg p-3 mb-5 bg-body rounded btn"  data-bs-toggle="modal" data-bs-target="#element">
                         <div class="card-body">
                             <h3 class="card-title" style="text-align: center;">
                                 ELEMENTS
@@ -177,6 +177,60 @@
                   </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="modal fade" id="element" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Plants</h1>
+            </div>
+            <div class="modal-body">
+                <div id="elementCarousal" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active carousal-modal" data-bs-interval="10000">
+                        <img src="https://cdn.mos.cms.futurecdn.net/Z7STxMEovJyL8GF45PviiR.jpg" class="d-block w-100" alt="fire">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fire</h5>
+                          </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://images.news18.com/ibnlive/uploads/2021/12/water-16384529503x2.png?im=Resize,width=360,aspect=fit,type=normal?im=Resize,width=320,aspect=fit,type=normal" alt="water">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Water</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1607387026974-f6d4bd4f501a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBjbGlmZnxlbnwwfHwwfHw%3D&w=1000&q=80" class="d-block w-100" alt="Earth">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Earth</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#elementCarousal" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#elementCarousal" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="description m-5 p-5">
+        <figure>
+          <blockquote class="blockquote h2 fs-5" style="text-align: center;">
+            <p>"Preserve and cherish the pale blue dot, it's the only home we've ever known."</p>
+          </blockquote>
+          <figcaption class="blockquote-footer fs-5" style="text-align: center;">
+            Carl Segan
+          </figcaption>
+        </figure>
+        <div class="para">
+          
         </div>
       </div>
 </body>
