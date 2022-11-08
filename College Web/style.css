@@ -1,0 +1,26 @@
+.navigation{
+    position: absolute;
+    background-color: #0c2340;
+}
+
+.navigation img, .uniHeading img{
+    position: relative;
+    height: 80px;
+    width: 150px;
+    object-fit: fit;
+}
+
+.nav-item{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.carousel-item img{
+    height: 600px;
+    object-fit: fill;
+}
+
+.subject img{
+    height: 100px;
+    width: 100px;
+}
