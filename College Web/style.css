@@ -36,11 +36,15 @@
 }
 
 .blogs{
-    background-color: rgb(139, 167, 191);
+    background-color: rgb(166, 232, 245);
     /* background-image: url(https://media.istockphoto.com/id/1198065903/photo/blurry-yellow-and-pink-ambient-stage-light-in-smoke-atmosphere.jpg?b=1&s=612x612&w=0&k=20&c=bXW0CjpWvZafO6VDEPp4onx6ozIyET1NsZVHi3aAK-g=);
     background-repeat: no-repeat; */
 }
 
 .blogs img{
     object-fit: fill;
+}
+
+.accordion-body{
+    background-color: rgb(8, 253, 237);
 }
