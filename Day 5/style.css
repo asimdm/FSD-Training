@@ -8,7 +8,7 @@
 
 .containers{
     background-color: aquamarine;
-    height: 200px;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -21,13 +21,22 @@
 }
 
 .description{
-    background-color: rgb(152, 182, 237);
+    background-color: rgb(152, 237, 224);
     border-radius: 8px;
 }
 
 .image img{
-    width: 350px;
-    height: 650;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 10px;
+    padding-top: 50px;
 }
 
+.caption{
+    padding-left: 20px;
+}
+
+.pic-gallery img{
+    height: 250px;
+    width: 250px;
+}
