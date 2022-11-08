@@ -24,3 +24,8 @@
     height: 100px;
     width: 100px;
 }
+
+.subject{
+    background-color: rgb(194, 240, 237);
+    border-radius: 5px;
+}
