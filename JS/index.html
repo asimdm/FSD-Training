@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <p id="head">0</p>
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="divide()">/ (by 2)</button>
+        <button onclick="multiply()">* (by 2)</button>
+        <button onclick="modu()">% (by 10)</button>
+    </div>
+    <div class="object">
+        <form action="" id="mainForm" name="mainForm">
+            <input type="text" id="name" placeholder="Name">
+            <input type="number" id="roll" placeholder="Roll No.">
+            <input type="text" id="address" placeholder="Address">
+            <input type="button" onclick="dis()" placeholder="click" value="Click">
+        </form>
+        <div class="here"">
+            Name: <p id="here1"></p>
+            Roll Number: <p id="here2"></p>
+            Address: <p class="" id="here3"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
