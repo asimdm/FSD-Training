@@ -3,6 +3,14 @@ var studentInfo={
     roll: 0,
     address: "Not entered"
 };
+var studentInfo1={
+    Name: "Not entered",
+    roll: 0,
+    address: "Not entered"
+};
+
+
+var arr = [];
 
 function add()
 {
@@ -47,10 +55,22 @@ function dis()
     studentInfo.roll=parseInt(z);
     z=document.getElementById("address").value;
     studentInfo.address=z;
-    console.log(z);
-    document.getElementById("here1").innerHTML=studentInfo.Name;
-    document.getElementById("here2").innerHTML=studentInfo.roll;
-    document.getElementById("here3").innerHTML=studentInfo.address;
+    console.log(studentInfo);
+    arr.push(studentInfo);
+    console.log(arr);
+}
+
+function dis1()
+{
+    z=document.getElementById("name1").value;
+    studentInfo1.Name=z;
+    z=document.getElementById("roll1").value;
+    studentInfo1.roll=parseInt(z);
+    z=document.getElementById("address1").value;
+    studentInfo1.address=z;
+    console.log(studentInfo1);
+    arr.push(studentInfo1);
+    console.log(arr);
 }
 
 // console.log(x);
