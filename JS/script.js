@@ -77,3 +77,20 @@ function dis1()
 // window.alert(x);
 
 // y.addEventListener("click", function(){x.innerHTML=x+1;});
+
+function myFunction() {
+    const message = document.getElementById("p01");
+    message.innerHTML = "";
+    let x = document.getElementById("demo").value;
+    try { 
+      if(x == "")  throw "empty";
+      if(isNaN(x)) throw "not a number";
+      x = Number(x);
+      if(x < 5)  throw "too low";
+      if(x > 10)   throw "too high";
+    }
+    catch(err) {
+      message.innerHTML = "Input is " + err;
+    }
+  }
+  
