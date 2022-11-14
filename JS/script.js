@@ -56,22 +56,22 @@ function dis()
     z=document.getElementById("address").value;
     studentInfo.address=z;
     console.log(studentInfo);
-    arr.push(studentInfo);
+    arr.push(this.studentInfo);
     console.log(arr);
 }
 
-function dis1()
-{
-    z=document.getElementById("name1").value;
-    studentInfo1.Name=z;
-    z=document.getElementById("roll1").value;
-    studentInfo1.roll=parseInt(z);
-    z=document.getElementById("address1").value;
-    studentInfo1.address=z;
-    console.log(studentInfo1);
-    arr.push(studentInfo1);
-    console.log(arr);
-}
+// function dis1()
+// {
+//     z=document.getElementById("name1").value;
+//     studentInfo1.Name=z;
+//     z=document.getElementById("roll1").value;
+//     studentInfo1.roll=parseInt(z);
+//     z=document.getElementById("address1").value;
+//     studentInfo1.address=z;
+//     console.log(studentInfo1);
+//     arr.push(studentInfo1);
+//     console.log(arr);
+// }
 
 // console.log(x);
 // window.alert(x);
@@ -93,4 +93,50 @@ function myFunction() {
       message.innerHTML = "Input is " + err;
     }
   }
-  
+
+var name="Ali";
+var Class="A";
+
+const person1={
+    "name": "Asim",
+    "Class": "A",
+    "fullName": function () {
+        return this.name+" "+this.Class;
+    }
+};
+
+const person2={
+    "name": "Mohammed",
+    "Class": "A",
+};
+
+let fullName=person1.fullName.bind(person2);
+console.log(fullName());
+
+const hello=()=>{
+    console.log("This is arrow function");
+}
+
+hello();
+
+const fullame=(name, callback)=>{
+    console.log("full name"+name);
+    callback();
+}
+
+fullame("Asim",()=>{
+    console.log("done!");
+});
+
+const promise= new Promise((resolve, reject)=> {
+    resolve(true);
+    reject(false);
+});
+
+promise.then((value)=>{
+    console.log("Promise then");
+});
+
+promise.catch((value)=>{
+    console.log("What is this?");
+});
