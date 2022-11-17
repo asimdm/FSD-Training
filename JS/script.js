@@ -140,3 +140,18 @@ promise.then((value)=>{
 promise.catch((value)=>{
     console.log("What is this?");
 });
+
+const calculate = async() => {
+    const add = new Promise((resolve,reject) => {
+        setTimeout(() => {
+            console.log('add');
+        },1000);
+    });
+    const minus = new Promise((resolve, reject)=> {
+        setTimeout(() => {
+            console.log('minus');
+        },3000);
+    });
+}
+
+calculate();
