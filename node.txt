@@ -1,0 +1,8 @@
+create folder -> mkdir <name>
+
+package.json file creation -> npm init
+
+create empty file -> con nul>file_name
+
+run the file -> node file_name
+
