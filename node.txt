@@ -6,3 +6,21 @@ create empty file -> con nul>file_name
 
 run the file -> node file_name
 
+we dont push node_modules to git and just use the command "npm install" to later get all dependencies after the pull from git.
+
+connect mongoose using mongoose.connect
+
+connect database using exports.connectToDb
+
+Single thread works in node.
+
+It is developed in C++, as it can directly access kernel which makes it faster.
+
+The single tread mechanism work by making an event queue of all requests. Then the request is divided into 2 queues: Blocking(Promises, async await etc which takes time) and non-blocking event.
+A loop is generated between them and when the blocking event is done it goes into processing.
+
+When a request is made it is sent to route, which finds the correct route and sends the request there. From there the controller connects with database and
+performs the task needed to be done and sends appropriate response.
+
+"/" -> Base address
+
