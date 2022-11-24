@@ -5,9 +5,9 @@ const userRoutes = require("./user.route");
 const authRoutes = require("./auth.route");
 const authMiddleware = require("../middleware/auth.middleware");
 
+router.use("/user", userRoutes);
 router.use(authMiddleware.verifyToken)
 router.use("/auth", authRoutes);
-router.use("/user", userRoutes);
 
 router.get("/", (req, res) => {
     res.send('This is your page!!');
